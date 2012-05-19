@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gridview_item_bg"
+    android:orientation="vertical" >
+    
+	<TextView 
+	    android:id="@+id/combined_cell_name"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="3dp"
+    	android:layout_marginLeft="15dp"
+    	android:textSize="16sp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/combined_cell_standard"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="3dp"
+    	android:layout_marginLeft="15dp"
+    	android:textSize="16sp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/combined_cell_count"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="3dp"
+    	android:layout_marginLeft="15dp"
+    	android:textSize="16sp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/combined_cell_unit_price"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="3dp"
+    	android:layout_marginLeft="15dp"
+    	android:textSize="16sp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/combined_cell_total"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_marginTop="3dp"
+    	android:layout_marginLeft="15dp"
+    	android:textSize="16sp"
+	    />
+</LinearLayout>

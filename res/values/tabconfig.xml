@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tabconfig">
+        <item >{title:"日常报表",classpath:"com.winon.health.report.ui.DailyRecordActivity"}</item>
+        <item >{title:"详细报表",classpath:"com.winon.health.report.ui.DetailRecordActivity"}</item>
+        <item >{title:"综合报表",classpath:"com.winon.health.report.ui.CombinedRecordActivity"}</item>
+        
+    </string-array>
+</resources>

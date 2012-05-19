@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TabHost
+        android:id="@+id/taghost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:background="@drawable/title_bg"
+                android:layout_weight="0" >
+            </TabWidget>
+
+            <!-- 个人信息布局 -->
+
+            <RelativeLayout
+                android:id="@+id/profile"
+                android:layout_width="fill_parent"
+                android:background="#FFE4E4E4"
+                android:layout_height="80dp" >
+
+                <!-- 相片 -->
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp" />
+
+                <!-- 简要信息 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <!-- 用列因为在这个布局限制下，列有扩展空间，而行没有 -->
+                    <!-- 第一列竖向布局 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:orientation="vertical" >
+
+                        <!-- 姓名 -->
+
+                        <TextView
+                            android:id="@+id/profile_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FF000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/profile_office"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FF000000"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <!-- 第二列竖向布局 -->
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:textColor="#FF000000"
+                        android:orientation="vertical" >
+
+
+                        <TextView
+                            android:id="@+id/profile_gender"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FF000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/profile_area"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FF000000"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <!-- 第三列竖向布局 -->
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="10dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/profile_date"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FF000000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/profile_bed"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="#FF000000"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+                    
+            <!-- Tab内容区 -->
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#FFFFFFFF" >
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>
