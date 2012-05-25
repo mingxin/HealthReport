@@ -52,8 +52,10 @@ public class DailyRecordActivity extends BaseActivity {
 			@Override
 			public void onItemClick(AdapterView<?> arg0, View view, int pos,
 					long id) {
+				//取出列表时间
 				String date = (String) view.getTag();
 				DailyReportEntity entity = loader.loadByDate(date);
+				
 				totalTextView.setText("总额：￥"+ entity.getTotal());
 				xiyaoTextView.setText("西药费：￥"+ entity.getXiyao());
 				zhongyaoTextView.setText("中药费：￥"+ entity.getZhongyao());

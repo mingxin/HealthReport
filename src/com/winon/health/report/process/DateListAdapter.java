@@ -23,7 +23,7 @@ public class DateListAdapter extends CommonAdapter<ListEntity>{
 		LinearLayout layout = (LinearLayout) inflater.inflate(R.layout.date_cell, null);
 		TextView title = (TextView)layout.findViewById(R.id.date_title);
 		
-		//2012-12-12
+		//2012-12-12设置列表时间
 		title.setTag(data.report_date);
 		
 		title.setText(data.report_date);
