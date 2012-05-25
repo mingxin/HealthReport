@@ -21,8 +21,8 @@ import android.widget.Toast;
 import com.lurencun.android.support.ui.BaseActivity;
 import com.winon.health.report.R;
 import com.winon.health.report.entity.CombinRecordEntity;
-import com.winon.health.report.menu.CombinRecordLoader;
-import com.winon.health.report.menu.GridViewAdapter;
+import com.winon.health.report.process.CombinRecordLoader;
+import com.winon.health.report.process.GridViewAdapter;
 
 public class DetailRecordActivity extends BaseActivity {
 
