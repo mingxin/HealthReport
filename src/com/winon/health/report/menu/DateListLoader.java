@@ -18,7 +18,7 @@ public class DateListLoader extends HasContext{
 		int size = 20;
 		for(int i=0;i<size;i++){
 			ListEntity le = new ListEntity();
-			le.report_date = "日期"+date;
+			le.report_date = date;
 			date_result.add(le);
 		}
 		return date_result;
